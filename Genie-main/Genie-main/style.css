@@ -1,0 +1,119 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.genie-container{
+    margin-top: 20px;
+    flex-basis: 40%;
+}
+.genie-container #genie{
+     width: 100%;
+}
+.wish-container{
+        flex-basis: 60%;
+        margin-top: 150px;
+        text-align: center;
+}
+#MyName{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+    margin-left: 15px;
+    
+ }
+ h1{
+    display: inline-block;
+ }
+.wish-container input{
+    border: none;
+    border-bottom: skyblue solid;
+    outline: 0;
+    background-color: aqua;
+    height: 70px;
+    width: 500px;
+    border-radius: 10px;
+    font-size: large;
+    padding-left: 15px;
+    font-style: oblique;
+    font-weight: 100;
+    color:red;   
+}
+.wish-container button{
+    border: none;
+    border-bottom: red solid;
+    outline: 0;
+    background-color: pink;
+    border-radius: 10px;
+    font-size: medium;
+    height: 70px;
+    width: 140px;
+}
+.emoji{
+    width: 50px;
+    margin-bottom: -11px;
+}
+@media screen and (max-width:1075px){
+    .wish-container button{
+        margin-top: 20px;
+    }
+    .genie-container{
+        margin-top: 50px;
+        flex-basis: 40%;
+    }
+    .genie-container #genie{
+        width: 100%;
+    }
+    .wish-container{
+        flex-basis: 40%;
+        margin-top: 80px;
+    }
+    .wish-container input{
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width:833px){
+    .genie-container{
+        margin-top:0;
+        flex-basis:50%;
+    }
+    .genie-container #genie{
+        width: 100%;
+    }
+    .wish-container{
+        flex-basis: 50%;
+        margin-top: -30px;
+    }
+}
+@media screen and (max-width:600px){
+    .container{
+        display: block;
+    }
+    .genie-container{
+        width: 600px;
+        text-align: center;
+    }
+    .genie-container #genie{
+        width: 400px;
+    }
+    .wish-container{
+        width: 600px;
+        text-align: center;
+    }
+    .wish-container h1{
+        display: block;
+        margin-top: 20px;
+    }
+    .wish-container #MyName{
+        font-size: 30px;
+    }
+    .wish-container input{
+        width: 300px;
+    }
+}

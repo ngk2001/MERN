@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=BBH+Sans+Hegarty&family=Bitcount+Grid+Single:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=BBH+Sans+Hegarty&family=Bitcount+Grid+Single:wght@100..900&family=Dancing+Script:wght@400..700&family=Rubik+Pixels&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=BBH+Sans+Hegarty&family=Bitcount+Grid+Single:wght@100..900&family=Dancing+Script:wght@400..700&family=Pacifico&family=Rubik+Pixels&display=swap');
+
+body {
+    background-color: azure;
+}
+
+h1 {
+    color: orange;
+    text-align: center;
+    font-family: "BBH Sans Hegarty", sans-serif;
+    font-family: "Bitcount Grid Single", system-ui;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "CRSV" 0.5,
+        "ELSH" 0,
+        "ELXP" 0;
+
+}
+
+h2 {
+    color: blueviolet;
+    text-align: center;
+    font-family: "BBH Sans Hegarty", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3 {
+    color: brown;
+    text-align: center;
+
+}
+
+h4 {
+    text-align: center;
+    color: chartreuse;
+}
+
+h5 {
+    text-align: center;
+}
+
+h6 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    background-color: black;
+    color: aliceblue
+}
+
+
+
+
+form {
+    background-color: orangered;
+    color: white;
+    text-align: center;
+    width: 70%;
+    border-radius: px;
+}
+
+.design1 {
+      font-family: "Bitcount Grid Single", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+
+}
+
+.tdesign{
+    border: 2px solid;
+    border-color: black;
+    border-collapse: collapse;
+    background-color: blueviolet;
+    color: white;
+
+}
+
+.tdesign td,th {
+    border: 2px solid;
+    border-color: black;
+
+}
+
+#paragh-desighn{
+      font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}

@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul,
+h5 {
+    margin: 10px;
+}
+
+li {
+    margin: 5px;
+}
+
+@media(max-width:700px) {
+    .navbar {
+        flex-direction: column;
+        align-content: center;
+        height:0%
+    }
+    ul {
+        flex-direction:column;
+        gap:10px;
+        padding-left:50px;
+
+    }
+}

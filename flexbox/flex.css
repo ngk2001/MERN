@@ -1,0 +1,19 @@
+.main{
+    width:500px;
+    height:500px;
+    background-color:skyblue;
+
+}
+.main div{
+    width:100px;
+    height:100px;
+}
+.one{
+    background-color:red;
+}
+.two{
+    background-color:green;
+}
+.three{
+    background-color: blue;
+}

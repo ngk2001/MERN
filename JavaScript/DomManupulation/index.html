@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{width:100px; height: 100px; background-color: aqua;
+        }
+        #heading1{
+            border: 2px black solid;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 id="heading1">Hello</h1>
+    <p id="parah">Good Morning</p>
+    <button id="button" style="width:200px; height:40px; font-size:x-large; border-radius: 5px;">Click</button><br><br>
+    <input type="text" id="text">
+    <button id="delete">delete</button><br><br>
+    <hr>
+    <div id="box"></div>
+    <br><br>
+    <img id="hero" src="673432.png" width="300">
+    <script>
+    const heading = document.getElementById("heading1");
+        heading.addEventListener("click", function () {
+            heading.textContent = "Dont touch me 🤬";
+            heading.style.backgroundColor = "red";
+        });
+
+        const paraph = document.getElementById("parah");
+        paraph.addEventListener("mouseover", function () {
+            paraph.style.color = "green";
+        });
+
+        let button = document.getElementById("button");
+        button.addEventListener("mouseover", function () {
+            button.style.backgroundColor = "red";
+            button.innerText = "😣"
+        })
+
+        button.addEventListener("mouseleave", function () {
+            button.innerText = "😀"
+            button.style.backgroundColor = "";
+
+
+        })
+
+        let text = document.getElementById("text");
+        text.addEventListener("keypress", function (event) {
+            heading.innerText = event.target.value
+        })
+
+        let deleteElement = document.getElementById("delete");
+        deleteElement.addEventListener("click", function () {
+            deleteElement.remove();
+        })
+
+        let box = document.getElementById("box")
+        box.addEventListener("mouseover", function(){
+         box.style.backgroundColor ="red"
+         box.style.width="200px";
+         box.style.height="200px";
+    
+
+        })
+
+        box.addEventListener("mouseleave", function(){
+         box.style.backgroundColor =""
+         box.style.width="";
+         box.style.height=""
+        })
+
+        const hero =document.getElementById("hero");
+        hero.addEventListener("mouseover", function(){
+          
+            hero.src="sandai.avif"
+        })
+
+          hero.addEventListener("mouseout", function(){
+            hero.src="673432.png"
+        })
+    </script>
+</body>
+</html>
