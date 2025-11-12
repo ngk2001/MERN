@@ -2,10 +2,9 @@ const express = require("express")
 const mongoose = require("mongoose")
 
 const app = express();
-const router = require("../../MVC/router/router")
+const router = require("./router")
 app.use(express.json())
 app.use("/user",router)
-
 
 const PORT = 8000;
 
