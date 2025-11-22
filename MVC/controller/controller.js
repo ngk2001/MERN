@@ -1,6 +1,6 @@
 const model = require("../model/model")
 
-const signup = async (req, res) => {
+const createUser = async (req, res) => {
     try {
         const { idNum, name, age, city, phoneNumber } = req.body;
         const user = await model.findOne({ name: name })
@@ -18,5 +18,40 @@ const signup = async (req, res) => {
     }
 }
 
-const myController ={signup};
+const getUser = async (req, res)=>{
+
+    try{
+
+      const user = await model.find();
+    
+        res.send(user)
+    }catch(err){
+        res.send({msg:"server error"})
+    }
+}
+const updateUser = async(req,res)=>{
+    try{    
+    const idNum = req.params.idNum
+    const updated = await model.findOneAndUpdate({idNum:idNum}, req.body, {new:true})
+    res.status(201).send(updated)
+    }catch(err){
+
+        res.status(500).send({msg:"server error"})
+
+    }
+}
+
+const deleteUser = async (req, res)=>{
+    try{
+    const idNum = req.params.idNum;
+    const deleted = await model.findOneAndDelete({idNum:idNum})
+    res.send("delete successfully")
+    }catch(error){
+        res.status(500).send("internal error")
+    }
+
+}
+
+
+const myController ={createUser, getUser, updateUser, deleteUser};
 module.exports = myController;
